@@ -1,0 +1,426 @@
+@import bourbon
+@import vars.sass
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+//Custom Styles Here
+
+//section-gray
+.s-gray
+	background-color: #f8f8f8
+
+.gallery-tizer-wrap
+	min-height: 360px
+	border: 7px solid $accent
+	background-size: cover
+	position: relative
+	display: block
+	&:hover
+		text-decoration: none
+		&::before
+			opacity: 0.8
+	&::before
+		content: ''
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		background-color: #414e5b
+		opacity: 0.6
+		+mt(.5s)
+	.table
+		z-index: 2
+		position: relative
+		text-align: center
+		height: 360px
+		span
+			font-size: em(26px)
+			color: #fff 
+			font-family: "OpenSansLight", sans-serif
+			i 
+				color: #b5bdc6
+				font-size: 58px
+
+
+.tizer-triangle
+	position: absolute
+	top: 0
+	right: 0
+	color: #fff
+	font-size: 19px
+	@include triangle(65px, $accent, up-right)
+	i 
+		position: absolute
+		top: -60px
+		right: 6px
+
+.s-profile
+	h2 
+		text-align: left
+	.fa-plus
+		color: #b1b8be
+	.button
+		margin-top: 20px
+		width: 100%	
+	
+	p 
+		color: #777
+
+.home-gallery-wrap > a,
+.certificate-wrap > a  
+	display: none
+	&:first-child
+		display: block	
+
+// section-gray-end
+
+//Magnific-Popup Customize
+.mfp-ready .mfp-figure
+	opacity: 0
+.mfp-zoom-in
+	.mfp-figure, .mfp-iframe-holder .mfp-iframe-scaler
+		opacity: 0
+		transition: all 0.3s ease-out
+		transform: scale(0.95)
+	&.mfp-bg, .mfp-preloader
+		opacity: 0
+		transition: all 0.3s ease-out
+	&.mfp-image-loaded .mfp-figure
+		opacity: 1
+		transform: scale(1)
+	&.mfp-ready
+		.mfp-iframe-holder .mfp-iframe-scaler
+			opacity: 1
+			transform: scale(1)
+		&.mfp-bg, .mfp-preloader
+			opacity: 0.8
+	&.mfp-removing
+		.mfp-figure, .mfp-iframe-holder .mfp-iframe-scaler
+			transform: scale(0.95)
+			opacity: 0
+		&.mfp-bg, .mfp-preloader
+			opacity: 0
+
+.mfp-iframe-scaler
+	overflow: visible
+.mfp-zoom-out-cur
+	cursor: auto
+	.mfp-image-holder .mfp-close
+		cursor: pointer
+.mfp-preloader
+	width: 30px!important
+	height: 30px!important
+	background-color: $accent
+	opacity: 1
+	margin: 0 auto
+	animation: rotateplane 1.2s infinite ease-in-out
+@-webkit-keyframes rotateplane
+	0%
+		-webkit-transform: perspective(120px)
+	50%
+		-webkit-transform: perspective(120px) rotateY(180deg)
+	100%
+		-webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg)
+@keyframes rotateplane
+	0%
+		transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+	50%
+		transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+	100%
+		transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg)
+
+// section-direct
+
+.item-vertical
+	svg, img
+		width: 74px
+		height: auto
+	path
+		fill: #555
+		+mt(.5s)
+	&:hover
+		.button
+			background-color: $accent
+			box-shadow:  0px 4px 0px darken($accent, 6%)
+			color: #fff
+
+			&:active, &:focus
+				background-color: darken($accent, 6%)
+				box-shadow:  0px 4px 0px darken($accent, 6%)
+		path
+			fill: $accent!important
+		h3	
+			&::before
+				background-color: $accent
+				width: 30%
+				margin-left: -15%
+
+	margin-top: 80px
+	text-align: center
+	h3
+		margin: 40px 0
+		padding-bottom: 15px
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			bottom: 0
+			height: 2px
+			width: 15%
+			left: 50%
+			margin-left: -7.5%
+			background-color: #d0d0d0
+			+mt(.5s)
+	p 
+		font-size: em(14px)
+		color: #666
+		padding: 0 20px
+		margin-bottom: 40px
+
+// section-direct-end
+
+
+// section-works
+
+.s-works
+	padding-bottom: 0
+	border-bottom: 20px solid #35414e
+	h2 
+		margin-bottom: 65px
+
+.portfolio 
+	.col-lg-3
+		padding: 0
+	.portfolio-item
+		position: relative
+		display: block
+		color: #414e5b
+		overflow: hidden
+		img 
+			+mt(.5s)
+		&:hover
+			.portfolio-item-content
+				opacity: 1
+				transform: scale(0.95)
+			img 
+				transform: scale(1.1)
+		&-content
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			padding-top: 25%
+			background-color: rgba(255,255,255,0.85)
+			text-align: center
+			opacity: 0
+			+mt(.5s)
+			transform: scale(1.1)
+			i 
+				color: rgba(65, 78, 91, .6)
+				font-size: 24px
+
+*
+	transition: filter .25s ease
+.mfp-wrap ~ *
+	filter: blur(5px)
+
+// section-works-end
+
+// carousel
+
+.carousel-wrap
+	margin-bottom: 25px
+	box-shadow: #d7d7d7 0 0 0 5px inset
+	text-align: center
+	padding: 0 0 30px
+	+mt(.25s)
+	background-color: #f8f8f8
+	&:hover
+		box-shadow: $accent 0 0 0 5px inset
+		background-color: #ebebeb
+		.button
+			background-color: $accent
+			box-shadow:  0px 4px 0px darken($accent, 6%)
+			color: #fff
+			&:active, &:focus
+				background-color: darken($accent, 6%)
+				box-shadow:  0px 4px 0px darken($accent, 6%)				
+		.car-img-wrap
+			svg
+				path
+					fill: $accent !important
+					opacity: 1
+	.car-img-wrap
+		position: relative
+		svg, .img-svg
+			position: absolute
+			max-height: 50px
+			left: 0px
+			top: 25px
+			path 
+				opacity: .9
+				+mt(.25s)
+				fill: #fff!important
+	h3
+		font-size: em(17px)
+		margin-top: 40px
+		font-family: "OpenSansBold", sans-serif
+	p 
+		font-size: em(14px)
+		color: #444
+		margin-bottom: 20px
+	.carousel-text
+		padding: 0 20px
+	.button
+		margin-top: 30px
+
+.s-equipment
+	h2 
+		margin-bottom: 60px
+
+.carousel-eq
+	.carousel-wrap
+		margin: 0 15px
+	.owl-dots
+		text-align: center
+		margin-top: 30px
+		.owl-dot
+			width: 15px
+			height: 15px
+			background-color: #d7d7d7
+			border-radius: 10em
+			display: inline-block
+			margin: 3px
+			&.active
+				background-color: $accent
+
+// carousel-end
+
+
+.tizer-text
+	font-family: "OpenSansLight", sans-serif
+	font-size: em(19px)
+	margin-bottom: 50px
+
+// section-callback
+
+.item-vertical-2
+	margin-top: 55px
+	&:hover
+		.rounded-img-wrap	
+			transform: scale(1.15)
+			border: $accent 6px solid
+		.iv-phone
+			color: $accent
+	text-align: center
+	h3
+		margin-top: 40px
+		margin-bottom: 10px
+		font-family: "OpenSansBold", sans-serif
+		color: #444
+		margin-top: 40px
+	p 
+		font-size: em(13px)
+		color: #666
+		letter-spacing: 1px
+		margin-top: 0
+.iv-phone
+	margin-top: 22px
+	color: #999
+	font-family: "Exo2Bold",sans-serif
+	font-size: em(17px)
+	+mt(.5s)
+	i 
+		font-size: 19px
+		margin-right: 3px
+
+.rounded-img-wrap	
+	border-radius: 10em
+	border: #d7d7d7 6px solid
+	overflow: hidden
+	width: 125px
+	height: 125px
+	text-align: center
+	margin: auto
+	+mt(.5s)
+	img
+		max-width: 100%
+
+// section-callback-end
+
+// section-brands
+.s-brands
+	padding: 60px 0
+	h2
+		margin-bottom: 60px
+
+.carousel-brands
+	padding: 0 80px
+	position: relative
+	.owl-controls
+		left: 0
+		top: 0
+		width: 100%
+		position: absolute
+		.owl-nav
+			position: absolute
+			width: 100%
+			top: 0
+			> div 
+				position: absolute
+				left: 25px
+				font-size: 34px
+				line-height: 34px
+				color: #9c9c9c
+				transition: all .25s ease
+				&:hover
+					color: $accent
+				&.owl-next
+					right: 25px
+					left: auto
+	.carousel-brand
+		transition: all .5s ease
+		opacity: .5
+		&:hover
+			opacity: .9
+		a 
+			display: block
+			text-align: center
+			img 
+				max-width: 70%
+				max-height: 40px
+				display: inline-block
+
+// section-brands-end
+
+//ALWAYS END
+@import media
+
+//Load Libs SASS
+@import app/libs/animate/animate.sass
+@import app/libs/font-awesome/css/font-awesome.sass
+@import app/libs/Magnific-Popup/magnific-popup.sass
+@import app/libs/owl-carousel/assets/owl.carousel.sass
