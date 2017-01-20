@@ -1,0 +1,449 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	footer .owox .vertical_line{
+		left: -6px
+	}
+	.brands .all_brand_btn a .all_brands_btn{
+		margin-top: 40px;
+		margin-right: 5px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1000px) {
+	.slide-text .btn_gall span{
+		font-size: 14px;
+	}
+	.slide-text .slide-text-p p{
+		line-height: 16px;
+		font-size: 14px;
+	}
+	.slide-text h2{
+		font-size: 26.61px;
+	}
+	footer .links_bottom ul li{
+		margin-right: 3px;
+	}
+	footer .links_bottom ul li a{
+		font-size: 12px;
+	}
+
+	footer .works_time{
+		margin-left: -5px;
+	}
+
+	.tabs-wr .wrapper .tab_content .tab_item .all_prod_btn .all_products_btn{
+		margin-right: 5px;
+	}
+	.brands .brands_list ul li{
+		width: 113px;
+	}
+	.brands .brands_wrap .brand_general{
+		width: 115px;
+	}
+
+	.bx-wrapper{
+		width: 889px;
+	}
+
+
+
+	.bx-wrapper .bx-viewport{
+		left: 0px;
+		border:  25px solid #fff
+	}
+
+	
+	.bx-wrapper .bx-next{
+		right: 0px;
+	}
+	.bx-wrapper .bx-prev{
+		left: 0px;
+	}
+	header .logo img{
+		width: 123%;
+	}
+	header .wrap_mnu ul li:last-child{
+		border-right: none
+	}
+	header .wrap_mnu ul li a{
+		font-size: 13px;
+		padding: 10px 50px 10px 10px;
+	}
+	header .helper{
+		margin-left: 0;
+	}
+	header .phone p strong{
+		font-size: 29.15px;
+	}
+	header .links_top ul li{
+		margin-right: 6px;
+	}
+	
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 600px) {
+
+	.bxslider li .product_wrap{
+		margin-top: 5px;
+	}
+	.slide-text .btn_gall span{
+		top: 6px;
+		left: 13px;
+	}
+	.slide-text .slide-text-p{
+		width: 71%;
+	}
+	.slide-text h2{
+		margin-top: -2px;
+	}
+
+	footer .social .dib{
+		display: inline-block;
+		margin-right: 30px;
+	}
+	footer .owox p{
+		margin-top: 0;
+		margin-left: -10px;
+	}
+	footer .owox .owox-wrap{
+	float: right;
+	margin-right: -10px;
+	}
+	footer .owox span{
+		margin-left: -10px;
+	}
+	.owox-line{
+		margin-top: 30px;
+		border-bottom: 1px solid #e6e6e6
+	}
+	.articles .all_article_btn{
+		margin-right: 5px;
+	}
+
+	.brands .brands-border{
+		margin-top: 227px;
+	}
+	
+	.brands .brands_list ul li{
+		width: 135px;
+	}
+	.brands .brands_list ul li a{
+		font-size: 15px;
+	}
+
+	.brands .main_p,
+	.brands .all_brand_btn{
+		display: inline-block;
+	}
+	.brands .brands_wrap .brand_general{
+		width: 137px;
+	}
+	.brands .brands_wrap .brand_top .bord-xs,
+	.brands .brands_wrap .brand_bottom .bord-xs{
+		border-right: none
+	}
+
+	.tabs-wr .wrapper .tabs .tab.active{
+		padding: 16px 43px;
+		position: relative;
+	}
+	.tabs-wr .wrapper .tabs .tab.active .toggle_mnu{
+		position: absolute;
+		top: 17px;
+		right: 5px;
+	}
+	.tabs-wr .wrapper .tab_content .tab_item .all_prod_btn .all_products_btn{
+		margin-right: 5px;
+	}
+	.bx-wrapper .bx-next{
+		right: -40px;
+	}
+	.bx-wrapper .bx-prev{
+		left: -40px;
+	}
+	.bx-wrapper{
+		width: 465px;
+	}
+	.all_shares_btn{
+		margin-top: 70px;
+		margin-bottom: 20px;
+	}
+	.share{
+		margin-top: 30px;
+	}
+	.hidden-item{
+		display: none;
+		margin-top: 0px;
+	}
+		
+
+	.hidden-item ul{
+		float: none;
+		text-align: center;
+
+	}
+		
+	.hidden-item ul li{
+		display: block;
+		margin-left: 0;
+		background-color: #246188;
+	}
+	.hidden-item ul li a{
+		text-transform: none;
+		line-height: 2em;
+		font-size: 15px;
+		font-weight: bold;
+		color: #fff;
+	}
+	.hidden-item ul li:hover{
+		border-bottom: none;
+
+	}
+
+			
+	.hidden-item ul li:active{
+		text-decoration: underline;
+	}
+	.hidden-item > ul{
+		padding: 10px 0;
+	}
+		
+	.hidden-item > ul > li:hover{
+		transition: all 1s ease;
+		text-decoration: none;
+	}
+
+	.toggle_mnu{
+		width: 28px;
+		height: 25px;
+		border-radius: 4px;
+		border: 1px solid #0c4871;
+		position: absolute;
+		float: right;
+		z-index: 200;
+		right: 5px;
+		top: 4px;
+		background-color: #fff;
+	}
+	.toggle_mnu span{
+		display: block;
+	}
+	.toggle_mnu .sandwich{
+		width: 17px;
+		height: 3px;
+		position: absolute;
+		top: -17px;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		z-index: 200;
+
+	}
+	.toggle_mnu .sandwich .sw-topper{
+		position: relative;
+		top: 2px;
+		width: 17px;
+		height: 3px;
+		background-color: #a9a9a9;
+		border: none;
+		border-radius: 4px 4px 4px 4px;
+		transition: transform 0.5s, top 0.2s;
+		display: block;
+	 }
+
+	svg	path{
+		fill: #e0e0e0	
+	}
+
+	.toggle_mnu .sandwich .sw-bottom{
+		position: relative;
+		width: 17px;
+		height: 3px;
+		top: 5.6px;
+		background-color: #a9a9a9;
+		border: none;
+		border-radius: 4px 4px 4px 4px;
+		transition: transform 0.5s, top 0.2s;
+		transition-delay: 0.2s, 0s;
+	}
+	
+	.sw-footer{
+		position: relative;
+		width: 17px;
+		height: 3px;
+		top: 8.5px;
+		background-color: #a9a9a9;
+		border: none;
+		border-radius: 4px 4px 4px 4px;
+		transition: all 0.5s;
+		transition-delay: 0.1s;
+	}
+
+	.sandwich.active .sw-topper{
+		top: 9px;
+		transform: rotate(-45deg);
+	}
+	.sandwich.active .sw-bottom{
+		top: 6px;
+		transform: rotate(45deg);
+	}
+			
+	.sandwich.active .sw-footer{
+		opacity: 0;
+		top: 0;
+		transform: rotate(180deg);
+	}
+		
+
+	header .hidden_mnu{
+		width: 100%;
+		height: 34px;
+		margin-top: 15px;
+		background: #1369a0; /* Old browsers */
+		background: -moz-linear-gradient(top,  #1369a0 0%, #0a588a 50%, #054b7a 77%, #13689e 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  #1369a0 0%,#0a588a 50%,#054b7a 77%,#13689e 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  #1369a0 0%,#0a588a 50%,#054b7a 77%,#13689e 100%);/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1369a0', endColorstr='#13689e',GradientType=0 ); /* IE6-9 */
+		border-radius: 6px;
+		-webkit-box-shadow: inset 0px 0px 0px 1px rgba(94,155,194,1);
+		-moz-box-shadow: inset 0px 0px 0px 1px rgba(94,155,194,1);
+		box-shadow: inset 0px 0px 0px 1px rgba(94,155,194,1);
+
+	}
+	header .hidden_mnu .nice-select{
+		border: 1px solid #246188;
+		border-radius: 4px;
+		width: 300px;
+		height: 23px;
+		margin-top: 5px;
+		margin-left: 9px;
+		line-height: 23px;
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+	header .hidden_mnu .nice-select .option{
+		line-height: 25px;
+		min-height: 25px;
+		width: 297px;
+		
+	}
+	header .hidden_mnu .nice-select .list{
+		margin-top: 9px;
+	}
+
+	header .contacts_top{
+		margin-left: 27px;
+	}
+	header .clients_enter{
+		float: left;
+		margin-left: 10px;
+	}
+	header .shopping_cart a .scart{
+		background-image: url("../img/sprite.png");
+		height: 24px;
+		width: 24px;
+		background-position: 188px 0px;
+		display: inline-block;
+		margin: auto 2px;
+	}
+	header .shopping_cart a .scart span{
+		font-size: 9.79px;
+		top: -6px;
+		left: 11px;
+		
+	}
+
+	header .shopping_cart a{
+		font-size: 12.51px;
+		line-height: 25px;
+		padding-bottom: 7px;
+	}
+	header .shopping_cart a .triangle{
+		background-image: url("../img/sprite.png");
+		height: 7px;
+		width: 7px;
+		background-position: 151px -3px;
+		display: inline-block;
+		margin: 0 12px 6px 6px;
+	}
+	header .logo{
+		margin-top: 9px;
+	}
+	header .logo{
+		width: 111%;
+	}
+	header .search{
+		margin-left: 0;
+	}
+	header .search form input[type="text"]{
+		width: 142px;
+	}
+	header .search form{
+		background: url("../img/search-bg.png") no-repeat scroll center center/100% 100% rgba(0, 0, 0, 0);
+		width: 230px;
+		margin-top: 4px;
+		margin-left: -5px;
+	}
+	header .phone_hidden{
+		display: inline-block;
+		margin-left: 0px;
+	}
+		
+	header .phone_hidden p {
+		font-size: 16px;
+		font-style: italic;
+		color: #333333;
+		margin-top: 9px;
+	}
+	header .phone_hidden a.callback{
+		margin-top: 2px;
+	}
+			
+
+	
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

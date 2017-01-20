@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Arial-Black";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/arial-black/Arial-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/arial-black/Arial-Black.woff") format("woff"), url("../fonts/arial-black/Arial-Black.ttf") format("truetype"); }
+@font-face {
+  font-family: "CenturyGothic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/CenturyGothic/CenturyGothic.eot?#iefix") format("embedded-opentype"), url("../fonts/CenturyGothic/CenturyGothic.woff") format("woff"), url("../fonts/CenturyGothic/CenturyGothic.ttf") format("truetype"); }
+@font-face {
+  font-family: "CenturyGothic-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/CenturyGothicBold/CenturyGothic-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/CenturyGothicBold/CenturyGothic-Bold.woff") format("woff"), url("../fonts/CenturyGothicBold/CenturyGothic-Bold.ttf") format("truetype"); }
+
+/*# sourceMappingURL=fonts.css.map */

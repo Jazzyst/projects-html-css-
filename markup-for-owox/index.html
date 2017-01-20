@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Test Project AZ</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css" />
+	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/nice-select.css" />
+	<link rel="stylesheet" href="css/jquery.bxslider.css" />
+	<link rel="stylesheet" href="css/media.css" />
+</head>
+<body>
+	
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>
+
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 col-sm-2 col-xs-3">
+					<div class="logo">
+						<a href="#"><img src="img/logo.png" alt="Alt"></a>
+					</div>
+				</div>
+				<div class="col-md-5 col-sm-5 col-xs-6">
+					<div class="contacts_top">
+						<div class="phone hidden-xs">
+							<p>(044) <strong>555-00-00</strong><a href="#" class="callback">Обратный звонок</a></p>
+						</div>
+						<div class="phone_hidden hidden-sm hidden-md hidden-lg">
+							<p>(044) 555-00-00<a href="#" class="callback">Обратный звонок</a></p>
+						</div>
+
+
+						<div class="search">
+							<form action="#">
+								<input type="text" placeholder="Поиск">
+								<input type="image" src="img/select-button.png" alt="Alt">
+							</form>
+						</div>
+
+					</div>
+				</div>
+				<div class="col-md-1 col-sm-1 hidden-xs">
+					<div class="helper"><a href="#"><img src="img/help.png" alt="Alt"><span class="helper_text">Помощь<br/> онлайн</span></a></div>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-3">
+					<div class="clients_enter hidden-xs"><div class="man"></div><a href="#" class="clients_link">Вход для постоянных клиентов</a></div>
+					<div class="clients_enter hidden-sm hidden-md hidden-lg"><div class="man"></div><a href="#" class="clients_link">Вход</a></div>
+					<div class="shopping_cart">
+						<a href="#"><div class="scart"><span>3</span></div><span>Корзина</span><div class="triangle"></div></a>
+					</div>
+				</div>
+			</div>	
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 xol-sm-12 hidden-xs">
+					<div class="links_top ">
+						<ul>
+							<li><a href="#">О магазине</a></li>
+							<li><a href="#">Адреса и телефоны</a></li>
+							<li><a href="#">Акции</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Статьи и обзоры</a></li>
+							<li><a href="#"><div class="quest"></div>Помощь</a></li>
+							<li><a href="#">Доставка и оплата</a></li>
+							<li><a href="#">Гарантия и сервис</a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="wrap_mnu hidden-sm hidden-xs">
+						<ul class="mnu">
+							<li class="mnu__list"><a href="#">
+								<p>ПК и Сервисы</p><p>Prime PC</p>  
+								<div class="mnu_triangle"></div></a>
+								<ul class="mnu_drop">
+									<li class="li_drop"><a href="#">SomeLink</a></li>
+									<li class="li_drop"><a href="#">SomeLink</a></li>
+									<li class="li_drop"><a href="#">SomeLink</a></li>
+									<li class="li_drop"><a href="#">SomeLink</a></li>
+									<li class="li_drop"><a href="#">SomeLink</a></li>
+								</ul>
+							</li>
+							<li class="mnu__list"><a href="#">
+								<p>Компьютеры и</p><p>периферия</p> 
+								<div class="mnu_triangle"></div></a>
+								<ul class="mnu_drop">
+									<li class="li_drop"><a href="#">SomeLink</a></li>
+									<li class="li_drop"><a href="#">SomeLink</a></li>
+									<li class="li_drop"><a href="#">SomeLink</a></li>
+									<li class="li_drop"><a href="#">SomeLink</a></li>
+									<li class="li_drop"><a href="#">SomeLink</a></li>
+								</ul>
+							</li>
+							<li class="mnu__list"><a href="#">
+								<p>Програмное</p><p>обеспачение</p>  
+								<div class="mnu_triangle"></div></a>
+								<ul class="mnu_drop">
+									<li class="li_drop"><a href="#">SomeLink</a></li>
+									<li class="li_drop"><a href="#">SomeLink</a></li>
+									<li class="li_drop"><a href="#">SomeLink</a></li>
+									<li class="li_drop"><a href="#">SomeLink</a></li>
+									<li class="li_drop"><a href="#">SomeLink</a></li>
+								</ul>
+							</li>
+							<li class="mnu__list"><a href="#">
+								<p>Сети и теле-</p><p>коммуникации</p> 
+								<div class="mnu_triangle"></div></a>
+								<ul class="mnu_drop">
+									<li class="li_drop"><a href="#">SomeLink</a></li>
+									<li class="li_drop"><a href="#">SomeLink</a></li>
+									<li class="li_drop"><a href="#">SomeLink</a></li>
+									<li class="li_drop"><a href="#">SomeLink</a></li>
+									<li class="li_drop"><a href="#">SomeLink</a></li>
+								</ul>
+							</li>
+							<li class="mnu__list"><a href="#">
+								<p>Системы </p><p>безопасности</p> 
+								<div class="mnu_triangle"></div></a>
+								<ul class="mnu_drop">
+									<li class="li_drop"><a href="#">SomeLink</a></li>
+									<li class="li_drop"><a href="#">SomeLink</a></li>
+									<li class="li_drop"><a href="#">SomeLink</a></li>
+									<li class="li_drop"><a href="#">SomeLink</a></li>
+									<li class="li_drop"><a href="#">SomeLink</a></li>
+								</ul>
+							</li>
+							<li class="mnu__list"><a href="#">
+								<p>Бесперебойная</p><p>работа</p>
+								<div class="mnu_triangle"></div></a>
+								<ul class="mnu_drop">
+									<li class="li_drop"><a href="#">SomeLink</a></li>
+									<li class="li_drop"><a href="#">SomeLink</a></li>
+									<li class="li_drop"><a href="#">SomeLink</a></li>
+									<li class="li_drop"><a href="#">SomeLink</a></li>
+									<li class="li_drop"><a href="#">SomeLink</a></li>
+								</ul>
+							</li>
+
+						</ul>
+					</div>
+					
+					<div class="hidden_mnu hidden-sm hidden-md hidden-lg">
+						<div class="col-xs-9">
+							<form action="#">
+								<select class="custom-select nice-select  active">
+									<option value="1">ПК и Сервисы Prime PC</option>
+									<option value="2">Компьютеры и перифирия</option>
+									<option value="3">Програмное обеспачение</option>
+									<option value="4">Сети и теле-коммуникации</option>
+									<option value="5">Системы безопасности</option>
+									<option value="6">Бесперебойная работа</option>
+								</select>
+							</form>
+
+
+						</div>
+						<div class="col-xs-3 hidden-sm hidden-md hidden-lg">
+							<button class="toggle_mnu hidden-lg">
+								<span class="sandwich">
+									<span class="sw-topper"></span>
+									<span class="sw-bottom"></span>
+									<span class="sw-footer"></span>
+								</span>
+							</button>
+						</div>
+					</div>
+
+
+
+				</div>
+			</div>
+		</div>
+
+
+	</header>
+	<div class="col-xs-9 hidden-sm hidden-md hidden-lg"></div>
+	<div class="col-xs-3 hidden-sm hidden-md hidden-lg">
+		<nav class="hidden-item main-mnu hidden-lg clearfix">
+			<ul>
+				<li><a href="#">Some item</a></li>
+				<li><a href="#">Some item</a></li>
+				<li><a href="#">Some item</a></li>
+				<li><a href="#">Some item</a></li>
+				<li><a href="#">Some item</a></li>
+				<li><a href="#">Some item</a></li>
+			</ul>
+		</nav>
+
+	</div>
+
+	<!-- gallery-section -->
+
+	<section class="gallery">
+		<div class="container">
+			<div class="row">
+				<!-- gallery -->
+				<div class="col-md-8 col-sm-8 col-xs-12">
+					<div class="gallery_wrap">
+						<div class="gallery_container">
+							<ul class="rslides callbacks callbacks4" id="slider">
+								<li><img src="img/goods.jpg" alt="alt">
+									<div class="slide-text"><h2>Инновационные решения Cisco Catalyst Switches</h2>
+										<div class="slide-text-p">
+											<p>Постройте свою безграничную сеть с уникальным предложением	безопасных и надежных решений</p>
+										</div>
+										<div class="btn_gall">
+											<a href="#"><img src="img/button-gall.png" alt="Alt"><span>Ознакомиться с решением</span></a>
+										</div>
+									</div>
+								</li>
+
+								<li><img src="img/goods2.jpg" alt="alt">
+									<div class="slide-text"><h2>Инновационные решения Cisco Catalyst Switches</h2>
+										<div class="slide-text-p">
+											<p>Постройте свою безграничную сеть с уникальным предложением	безопасных и надежных решений</p>
+										</div>
+										<div class="btn_gall">
+											<a href="#"><img src="img/button-gall.png" alt="Alt"><span>Ознакомиться с решением</span></a>
+										</div>
+									</div>
+								</li>
+
+								<li><img src="img/goods.jpg" alt="alt">
+									<div class="slide-text"><h2>Инновационные решения Cisco Catalyst Switches</h2>
+										<div class="slide-text-p">
+											<p>Постройте свою безграничную сеть с уникальным предложением	безопасных и надежных решений</p>
+										</div>
+										<div class="btn_gall">
+											<a href="#"><img src="img/button-gall.png" alt="Alt"><span>Ознакомиться с решением</span></a>
+										</div>
+									</div>
+								</li>
+
+								<li><img src="img/goods2.jpg" alt="alt">
+									<div class="slide-text"><h2>Инновационные решения Cisco Catalyst Switches</h2>
+										<div class="slide-text-p">
+											<p>Постройте свою безграничную сеть с уникальным предложением	безопасных и надежных решений</p>
+										</div>
+										<div class="btn_gall">
+											<a href="#"><img src="img/button-gall.png" alt="Alt"><span>Ознакомиться с решением</span></a>
+										</div>
+									</div>
+								</li>
+
+								<li><img src="img/goods.jpg" alt="alt">
+									<div class="slide-text"><h2>Инновационные решения Cisco Catalyst Switches</h2>
+										<div class="slide-text-p">
+											<p>Постройте свою безграничную сеть с уникальным предложением	безопасных и надежных решений</p>
+										</div>
+										<div class="btn_gall">
+											<a href="#"><img src="img/button-gall.png" alt="Alt"><span>Ознакомиться с решением</span></a>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- gallery-end -->
+
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<div class="share">
+						<h3>Акции</h3>
+						<div class="share_wrap">
+							<div class="row">
+								<div class="col-md-2 col-sm-2 col-xs-2">
+									<div class="share_img"></div>
+								</div>
+								<div class="col-md-10 col-sm-10 col-xs-10">
+									<div class="good1 share_descr"><p><a href="#">Коробочные продукты "Лаборатории Касперского" </a>без увеличения стоимости!</p></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="share_wrap">
+							<div class="row">
+								<div class="col-md-2 col-sm-2 col-xs-2">
+									<div class=" good2 share_img"></div>
+								</div>
+								<div class="col-md-10 col-sm-10 col-xs-10">
+									<div class="share_descr"><p><a href="#">Специальные цены на ABBYY FineReader </a>	10 Professional Edition!</p></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="share_wrap">
+							<div class="row">
+								<div class="col-md-2 col-sm-2 col-xs-2">
+									<div class="good3 share_img"></div>
+								</div>
+								<div class="col-md-10 col-sm-10 col-xs-10">
+									<div class="share_descr"><p><a href="#">Скидка до 80% на программные продукты </a>Microsoft для академических пользователей и научных учреждений</p></div>
+								</div>
+								<div class="col-md-12">
+									<div class="all_shares_btn">
+										<a href="#"><div class="all_shares"><span>Все акции</span></div></a>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- gallery-section-end -->
+
+	<!-- tabs-section -->
+
+	<section class="tabs-wr">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<div class="wrapper">
+						<div class="tabs">
+							<span class="tab">Спецпредложения
+							<button class="toggle_mnu hidden-sm hidden-md hidden-lg">
+								<span class="sandwich">
+									<span class="sw-topper"></span>
+									<span class="sw-bottom"></span>
+									<span class="sw-footer"></span>
+								</span>
+							</button>
+							</span>
+							<span class="tab hidden-xs">Бестселлеры</span>
+							<span class="tab hidden-xs">Новинки</span>
+							<span class="tab hidden-xs">Скоро в продаже</span>         
+						</div>
+						<div class="tab_content">
+							<div class="tab_item">
+								<div class="all_prod_btn">
+									<a href="#"><div class="all_products_btn"><span>Все спецпредложения</span></div></a>
+								</div>
+								<ul class="bxslider">
+
+									<li>
+										<div class="product_wrap">
+											<div class="prod1 product_img"></div>
+											<div class="product_descr">
+												<p>+ в подарок мышка и стильная сумка</p>
+												<p><a href="#">Asus ee PC 1015PE White</a></p>
+												<p class="prev_price"></p>
+												<a href="#" class="first_btn btn_price"><div class="first_btn current_prise"><span>6 257 <strong class="grn">грн.</strong></span> <div class="small_scart"></div></div> </a>
+												<p class="dollar_price">756 $</p>
+											</div>
+										</div>
+									</li>
+
+									<li>
+										<div class="product_wrap">
+											<div class="prod2 product_img"></div>
+											<div class="product_descr">
+												<p>Уникальное снижение цены на винчестер 200 GB!</p>
+												<p><a href="#">Samsung HD203WI</a></p>
+												<p class="prev_price">754 <span>грн.</span></p>
+												<a href="#" class="btn_price"><div class="current_prise"><span>599 <strong class="grn">грн.</strong></span> <div class="small_scart"></div></div> </a>
+												<p class="dollar_price">86 $</p>
+											</div>
+										</div>
+									</li>
+
+									<li>
+										<div class="product_wrap">
+											<div class="prod3 product_img"></div>
+											<div class="product_descr">
+												<p>При покупке 5 камер и более — скидка 10%</p>
+												<p><a href="#">Vision Hi-Tech VB60CSHR</a></p>
+												<p class="prev_price">1 754 <span>грн.</span></p>
+												<a href="#" class="btn_price"><div class="current_prise"><span>1 599 <strong class="grn">грн.</strong></span> <div class="small_scart"></div></div> </a>
+												<p class="dollar_price">206 $</p>
+											</div>
+										</div>
+									</li>
+
+									<li>
+										<div class="product_wrap">
+											<div class="prod4 product_img"></div>
+											<div class="product_descr">
+												<p>По европейской цене!</p>
+												<p class="big_margin"><a href="#">Apple iMac 27" (Z0GF)</a></p>
+												<p class="prev_price">24 754 <span>грн.</span></p>
+												<a href="#" class="btn_price"><div class="long-price current_prise"><span>23 399 <strong class="grn">грн.</strong></span> <div class="small_scart"></div></div> </a>
+												<p class="dollar_price">3 049 $</p>
+											</div>
+										</div>
+									</li>
+
+									<li>
+										<div class="product_wrap">
+											<div class="prod5 product_img"></div>
+											<div class="product_descr">
+												<p>Скидка 25%</p>
+												<p class="big_margin"><a href="#">Видеокарта MSI N9800GT</a></p>
+												<p class="prev_price">1 754 <span>грн.</span></p>
+												<a href="#" class="btn_price"><div class="current_prise"><span>1 434 <strong class="grn">грн.</strong></span> <div class="small_scart"></div></div> </a>
+												<p class="dollar_price">246 $</p>
+											</div>
+										</div>
+									</li>
+
+
+
+
+								</ul>
+								
+							</div>
+							<div class="tab_item"><h2>Содержимое 2</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe doloribus, quae pariatur iusto vel quia officiis distinctio eveniet, cupiditate soluta!</p>
+								<p>Expedita, blanditiis obcaecati id harum ex ut. Tempore corrupti consequatur, tempora blanditiis aspernatur perferendis nobis dicta itaque, quidem, rerum repudiandae.</p>
+								<p>Debitis harum explicabo porro assumenda. Voluptatum illum quae quasi cumque quaerat, recusandae qui voluptates saepe. Laboriosam, quis culpa enim sint.</p>
+								<p>Expedita porro at magnam placeat quis voluptate totam dolorum, deserunt odio dolorem facilis nostrum nesciunt rem beatae, maiores libero perferendis?</p>
+								<p>Enim minus maxime officia laudantium debitis nulla quasi quia doloribus tempora officiis ullam voluptatibus similique, recusandae, quo, voluptatem, consequatur obcaecati!</p></div>
+								<div class="tab_item"><h2>Содержимое 3</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe doloribus, quae pariatur iusto vel quia officiis distinctio eveniet, cupiditate soluta!</p>
+									<p>Expedita, blanditiis obcaecati id harum ex ut. Tempore corrupti consequatur, tempora blanditiis aspernatur perferendis nobis dicta itaque, quidem, rerum repudiandae.</p>
+									<p>Debitis harum explicabo porro assumenda. Voluptatum illum quae quasi cumque quaerat, recusandae qui voluptates saepe. Laboriosam, quis culpa enim sint.</p>
+									<p>Expedita porro at magnam placeat quis voluptate totam dolorum, deserunt odio dolorem facilis nostrum nesciunt rem beatae, maiores libero perferendis?</p>
+									<p>Enim minus maxime officia laudantium debitis nulla quasi quia doloribus tempora officiis ullam voluptatibus similique, recusandae, quo, voluptatem, consequatur obcaecati!</p></div>
+									<div class="tab_item"><h2>Содержимое 4</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe doloribus, quae pariatur iusto vel quia officiis distinctio eveniet, cupiditate soluta!</p>
+										<p>Expedita, blanditiis obcaecati id harum ex ut. Tempore corrupti consequatur, tempora blanditiis aspernatur perferendis nobis dicta itaque, quidem, rerum repudiandae.</p>
+										<p>Debitis harum explicabo porro assumenda. Voluptatum illum quae quasi cumque quaerat, recusandae qui voluptates saepe. Laboriosam, quis culpa enim sint.</p>
+										<p>Expedita porro at magnam placeat quis voluptate totam dolorum, deserunt odio dolorem facilis nostrum nesciunt rem beatae, maiores libero perferendis?</p>
+										<p>Enim minus maxime officia laudantium debitis nulla quasi quia doloribus tempora officiis ullam voluptatibus similique, recusandae, quo, voluptatem, consequatur obcaecati!</p></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- tabs-section-end -->
+
+				<!-- section-brands -->
+
+				<section class="brands">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-8 col-sm-8 col-xs-7">
+								<div class="main_p"><p>IT-решения и компьютерная техника ведущих мировых производителей</p></div>
+								
+								
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-5">
+								<div class="all_brand_btn">
+									<a href="#"><div class="all_brands_btn"><span>Все производители</span></div></a>
+								</div>
+							</div>
+							<div class="col-md-12 col-sm-12 col-xs-12">
+								<div class="brands_wrap">
+									<div class="brand_top">
+										<div class="brand_general brand_tl"><a href="#"><div class="brand1 brand_img"></div></a></div>
+										<div class="brand_general brand_tr"><a href="#"><div class="brand2 brand_img"></div></a></div>
+									</div>
+									<div class="brand_bottom">
+										<div class="brand_general brand_bl"><a href="#"><div class="brand3 brand_img"></div></a></div>
+										<div class="brand_general brand_br"><a href="#"><div class="brand4 brand_img"></div></a></div>
+									</div>
+									
+								</div>
+								<div class="brands_wrap">
+									<div class="brand_top">
+										<div class="brand_general brand_tl"><a href="#"><div class="brand5 brand_img"></div></a></div>
+										<div class="brand_general brand_tr bord-xs"><a href="#"><div class="brand6 brand_img"></div></a></div>
+									</div>
+									<div class="brand_bottom">
+										<div class="brand_general brand_bl"><a href="#"><div class="brand7 brand_img"></div></a></div>
+										<div class="brand_general brand_br bord-xs"><a href="#"><div class="brand8 brand_img"></div></a></div>
+									</div>
+									
+								</div>
+
+								<div class="brands_wrap">
+									<div class="brand_top">
+										<div class="brand_general brand_tl"><a href="#"><div class="brand9 brand_img"></div></a></div>
+										<div class="brand_general brand_tr"><a href="#"><div class="brand10 brand_img"></div></a></div>
+									</div>
+									<div class="brand_bottom">
+										<div class="brand_general brand_bl"><a href="#"><div class="brand11 brand_img"></div></a></div>
+										<div class="brand_general brand_br"><a href="#"><div class="brand12 brand_img"></div></a></div>
+									</div>
+									
+								</div>
+
+								<div class="brands_wrap">
+									<div class="brand_top">
+										<div class="brand_general brand_tl"><a href="#"><div class="brand13 brand_img"></div></a></div>
+										<div class="brand_general brand_tr bord_none"><a href="#"><div class="brand14 brand_img"></div></a></div>
+									</div>
+									<div class="brand_bottom">
+										<div class="brand_general brand_bl"><a href="#"><div class="brand15 brand_img"></div></a></div>
+										<div class="brand_general brand_br bord_none"><a href="#"><div class="brand16 brand_img"></div></a></div>
+									</div>
+									
+								</div>
+							</div>
+							
+							<div class="col-md-12 col-sm-12 col-xs-12">
+								<div class="brands_list">
+									<ul>
+										<li><a href="#">ACER</a></li>
+										<li><a href="#">ADOBE</a></li>
+										<li><a href="#">AMP NETCONNECT</a></li>
+										<li><a href="#">АРС</a></li>
+										<li><a href="#">Apollo</a></li>
+										<li><a href="#">ASSMANN</a></li>
+										<li><a href="#">AVAYA</a></li>
+									</ul>
+									<ul>
+										<li><a href="#">BenQ</a></li>
+										<li><a href="#">BOSCH</a></li>
+										<li><a href="#">CISCO</a></li>
+										<li><a href="#">Dell</a></li>
+										<li><a href="#">D-LINK</a></li>
+										<li><a href="#">Dr.Web</a></li>
+										<li><a href="#">EPSON</a></li>
+									</ul>
+									<ul>
+										<li><a href="#">McAfee</a></li>
+										<li><a href="#">MICROSOFT</a></li>
+										<li><a href="#">MSI</a></li>
+										<li><a href="#">NEC</a></li>
+										<li><a href="#">OKI</a></li>
+										<li><a href="#">ORACLE</a></li>
+										<li><a href="#">PANASONIC</a></li>
+									</ul>
+									<ul>
+										<li><a href="#">BenQ</a></li>
+										<li><a href="#">BOSCH</a></li>
+										<li><a href="#">CISCO</a></li>
+										<li><a href="#">Dell</a></li>
+										<li><a href="#">D-LINK</a></li>
+										<li><a href="#">Dr.Web</a></li>
+										<li><a href="#">EPSON</a></li>
+									</ul>
+									<ul>
+										<li><a href="#">PANASONIC</a></li>
+										<li><a href="#">PROMT</a></li>
+										<li><a href="#">R&amp;M</a></li>
+										<li><a href="#">SAMSUNG</a></li>
+										<li><a href="#">TOSHIBA</a></li>
+										<li><a href="#">VINET</a></li>
+										<li><a href="#">VMware</a></li>
+									</ul>
+									<ul>
+										<li><a href="#">ESET</a></li>
+										<li><a href="#">HP</a></li>
+										<li><a href="#">HITACHI DATA SYSTEMS</a></li>
+										<li><a href="#">IBM</a></li>
+										<li><a href="#">INTEL</a></li>
+										<li><a href="#">KINGSTON</a></li>
+										<li><a href="#">LG ELECTRONICS</a></li>
+									</ul>
+									<ul>
+										<li><a href="#">McAfee</a></li>
+										<li><a href="#">MICROSOFT</a></li>
+										<li><a href="#">MSI</a></li>
+										<li><a href="#">NEC</a></li>
+										<li><a href="#">OKI</a></li>
+										<li><a href="#">ORACLE</a></li>
+										<li><a href="#">PANASONIC</a></li>
+									</ul>
+									<ul>
+										<li><a href="#">PANASONIC</a></li>
+										<li><a href="#">PROMT</a></li>
+										<li><a href="#">R&amp;M</a></li>
+										<li><a href="#">SAMSUNG</a></li>
+										<li><a href="#">TOSHIBA</a></li>
+										<li><a href="#">VINET</a></li>
+										<li><a href="#">VMware</a></li>
+									</ul>
+
+									
+								</div>
+							</div>
+							<div class="col-md-12 col-sm-12 col-xs-12">
+								<div class="brands-border"></div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- section-brands-end -->
+
+				<!-- section-articles -->
+
+				<section class="articles">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12 col-sm-12 col-xs-12">
+								<div class="main_h">
+									<h2>Статьи и обзоры</h2>
+								</div>
+								<div class="all_article_btn">
+									<a href="#"><div class="all_articles_btn"><span>Другие статьи и обзоры</span></div></a>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-12">
+							<div class="row">
+								<div class="col-xs-4 col-md-12 col-sm-12 col-lg-12">
+									<div class="articles_img"></div>
+								</div>
+								<div class="col-xs-8 col-md-12 col-sm-12 col-lg-12">
+									<div class="articles_descr">
+									<h4><a href="#">Обзор смартфона Samsung Galaxy R</a></h4>
+									<p>Samsung продолжает наращивать количество моделей в свой звездной серии смартфонов Galaxy. Впрочем, на этот раз причина появления новинки вполне предсказуема.</p>
+								</div>
+								</div>
+							</div>
+							</div>
+
+							<div class="col-md-3 col-sm-3 col-xs-12">
+								<div class="row">
+								<div class="col-xs-4 col-md-12 col-sm-12 col-lg-12">
+									<div class="articles_img art2"></div>
+								</div>
+								<div class="col-xs-8 col-md-12 col-sm-12 col-lg-12">
+									<div class="articles_descr">
+									<h4><a href="#">Обзор принтера Hewlett Packard Deskjet D1663</a></h4>
+									<p>Волны удовольствия...! Ну какой украинец не любит вкусной еды? Вот и я, признаться, не прочь поесть что-нибудь аппетитное.</p>
+							</div>
+								</div>
+							</div>
+									
+								
+							</div>
+
+							<div class="col-md-3 col-sm-3 col-xs-12">
+								<div class="row">
+								<div class="col-xs-4 col-md-12 col-sm-12 col-lg-12">
+									<div class="articles_img art3"></div>
+								</div>
+								<div class="col-xs-8 col-md-12 col-sm-12 col-lg-12">
+									<div class="articles_descr">
+									<h4><a href="#">LIFEBOOK X2: ноутбук, складывающийся вчетверо</a></h4>
+									<p>Настольный компьютер, ноутбук, нетбук, планшет, смартфон – вроде бы все размерные ниши компьютерных устройств уже заняты, и ничего нового тут не придумаешь.</p>
+								</div>
+								</div>
+							</div>
+									
+								
+							</div>
+
+							<div class="col-md-3 col-sm-3 col-xs-12">
+							<div class="row">
+								<div class="col-xs-4 col-md-12 col-sm-12 col-lg-12">
+									<div class="articles_img art4"></div>
+								</div>
+								<div class="col-xs-8 col-md-12 col-sm-12 col-lg-12">
+									<div class="articles_descr">
+									<h4><a href="#">Обзор беспроводного HDD Seagate GoFlex Satellite</a></h4>
+									<p>Банальный вопрос: что делать, если в вашем ноутбуке закончилось место на жестком диске? Самый простой ответ – купить внешний жесткий диск с USB-интерфейсом, благо сейчас это недорого и широко доступно.</p>
+								</div>
+								</div>
+							</div>
+									
+								
+							</div>
+							<div class="col-md-12 col-sm-12 col-xs-12">
+								<div class="bord_bott_articles"><img src="img/bg-bottom.jpg" alt="alt"></div>
+							</div>
+						</div>
+					</div>
+
+				</section>
+
+				<!-- section-articles-end -->
+
+
+				<!-- section-footer -->
+				<footer>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12 col-sm-12 col-xs-12">
+								<p>&copy; 2003–2013, The LiveLinkShop</p>
+							</div>
+							<div class="col-md-12 col-sm-12 col-xs-12">
+								<div class="links_bottom ">
+									<ul>
+										<li><a href="#">О магазине</a></li>
+										<li><a href="#">Адреса и телефоны</a></li>
+										<li><a href="#">Акции</a></li>
+										<li><a href="#">Новости</a></li>
+										<li><a href="#">Статьи и обзоры</a></li>
+										<li><a href="#"><div class="quest"></div>Помощь</a></li>
+										<li><a href="#">Доставка и оплата</a></li>
+										<li><a href="#">Гарантия и сервис</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-6">
+							<div class="contact_bottom">
+								<p>Украина, Киев, ул. Ленина, 31</p>
+								<p class="phone_b">(044)<span>555-00-00</span></p>
+								<a href="#" class="fc">Обратный звонок</a>
+								<div class="feedback_btn_wrap">
+									<a href="#"><div class="feedback_btn"><span>Форма обратной связи</span></div></a>
+								</div>
+							</div>
+								
+							</div>
+
+							<div class="col-md-3 col-sm-3 col-xs-6">
+							<div class="works_time">
+								<p><span>Время работы с 9:00 до 19:00</span></p>
+								<p>Суббота с 9:00 до 18:00</p>
+								<p>Воскресенье с 10:00 до 15:00</p>
+								<p class="pay">Принимаем к оплате</p>
+								<a href="#"><div class="visa"></div></a>
+								<a href="#"><div class="master"></div></a>
+								<a href="#"><div class="wm"></div></a>
+							</div>
+								
+							</div>
+
+							<div class="col-md-3 col-sm-3 col-xs-12">
+							<div class="social">
+									
+												<div class="soc_wrap dib">
+													<div class="social_img1"></div>
+													<div class="soc_descr"><a href="#">Мы на Фейсбуке</a></div>
+												</div>
+
+												<div class="soc_wrap dib">
+													<div class="social_img2"></div>
+													<div class="soc_descr"><a href="#">Наша страница вКонтакте</a></div>
+												</div>
+
+											
+												<div class="soc_wrap dib">
+													<div class="social_img3"></div>
+													<div class="soc_descr"><a href="#">Наш Твиттер</a></div>
+												</div>
+
+											
+							</div>
+								
+							</div>
+							<div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+								<div class="owox-line"></div>
+							</div>
+							<div class="col-xs-12 col-md-3 col-sm-3 ">
+							<div class="owox">
+								<div class="vertical_line hidden-xs"></div>
+								<div class="col-xs-6 col-md-12 col-sm-12 col-lg-12">
+									<div class="owox-wrap">
+									<a href="#">
+										<div class="owox_logo"></div>
+									</a>
+								</div>
+								</div>
+								<div class="col-xs-6 col-md-12 col-sm-12 col-lg-12">
+									<p>Интернет-магазин разработан и поддерживается <a href="#">в компании OWOX</a></p>
+								<span>2011</span>
+								</div>
+								
+							</div>
+								
+							</div>
+
+							<div class="col-md-12 col-sm-12 col-xs-12">
+								<div class="rule">
+									<a href="#">Условия использования сайта</a>
+								</div>
+								<div class="developer">
+									<a href="https://vk.com/trubachist">Developer: Andrew Zhuravlov</a>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+
+				</footer>
+
+
+
+
+				<div class="hidden">
+
+				</div>
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	<script src="libs/jquery/jquery-2.1.3.min.js"></script>
+	<script src="libs/jqBootstrapValidation/jqBootstrapValidation.js"></script>
+	<script src="libs/slider/responsiveslides.min.js"></script>
+	<script src="libs/nice-select/jquery.nice-select.min.js"></script>
+	<script src="libs/bxslider/jquery.bxslider.js"></script>
+	<script src="js/common.js"></script>
+
+	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>

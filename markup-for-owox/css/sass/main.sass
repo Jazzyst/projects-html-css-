@@ -1,0 +1,1144 @@
+@import "bourbon/bourbon"
+
+body
+	font-family: Arial, sans-serif
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.42857
+	-webkit-font-smoothing: antialised
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+.hidden
+	display: none
+
+.loader 
+	background: none repeat scroll 0 0 #fff
+	bottom: 0
+	height: 100%
+	left: 0
+	position: fixed
+	right: 0
+	top: 0
+	width: 100%
+	z-index: 9999
+	.loader_inner 
+		background-image: url("../img/loading.gif")
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center center
+		background-color: #fff
+		height: 60px
+		width: 60px
+		margin-top: -30px
+		margin-left: -30px
+		left: 50%
+		top: 50%
+		position: absolute
+
+
+
+	
+header
+	background-image: url("../img/bg-main.png")
+
+
+	.logo
+		margin-top: 10px
+		float: left
+		img
+			width: 100%
+			height: auto
+	.phone
+		display: inline-block
+		margin-left: 40px
+		p 
+			font-family: Arial,sans-serif
+			font-size: 22.77px
+			font-style: italic
+			color: #333333
+			strong
+				font-weight: bold
+				font-size: 35.15px
+	a.callback
+		display: inline-block
+		margin-left: 10px
+		margin-top: 10px
+		text-decoration: none
+		border-bottom: 1px dashed
+		font-family: Arial, sans-serif
+		font-size: 13px
+		font-style: italic
+		color: #105a8f
+		vertical-align: top
+		&:hover
+			color: #6611cc
+	.search
+		margin-left: 20px
+		form 
+			background-image: url("../img/search-bg.png") 
+			background-position: center center
+			background-repeat: no-repeat
+			width: 323px
+			height: 26px
+			margin-top: 4px
+			position: relative
+			input[type='text'] 
+				width: 240px
+				height: 20px
+				margin-left: 15px
+				margin-top: 4px
+				font-style: italic
+				border: none
+				border-style: none
+				outline: none
+			input[type='image'] 
+				width: 55px
+				height: 21px
+				margin-top: 3px
+				margin-right: 3px
+				float: right
+				border: none
+				border-style: none
+				outline: none
+	.helper
+		margin-top: 3px
+		margin-left: -7px
+		position: relative
+		span.helper_text
+			position: absolute
+			top: 63px
+			left: 18px
+			text-align: center
+			font-size: 13px
+			line-height: 14px
+			font-weight: bold
+			color: #000
+		&:active
+			-webkit-transform: translateY(2px)
+			-ms-transform: translateY(2px)
+			transform: translateY(2px)
+
+	.clients_enter
+		margin-top: 10px
+		float: right
+		.man
+			background-image: url("../img/sprite.png")
+			height: 18px
+			width: 20px
+			background-position: 238px 0
+			display: inline-block
+			margin-right: 5px
+			
+		a.clients_link
+			text-decoration: none
+			border-bottom: 1px dashed
+			font-size: 13px
+			color: #105a8f
+			vertical-align: top
+			&:hover
+				color: #6611cc
+	
+	.shopping_cart
+		border: 1px solid #cecdcd
+		border-radius: 4px
+		float: right
+		margin-top: 5px
+		a
+			font-family: "Arial-Black", sans-serif
+			font-weight: normal
+			font-style: italic
+			font-size: 23px
+			line-height: 44px
+			text-decoration: none
+			color: #105a8f
+			border-style: none
+			span
+				vertical-align: top
+				text-decoration: underline
+				
+			.scart
+				background-image: url("../img/sprite.png")
+				height: 40px
+				width: 42px
+				background-position: 301px 0px
+				display: inline-block
+				margin: 5px 5px 0 16px
+				position: relative
+				span
+					position: absolute
+					font-family: "Arial-Black", sans-serif
+					font-size: 18px
+					color: #d10000
+					text-decoration: none
+					font-style: normal
+					top: -12px
+					left: 19px
+			
+			.triangle
+				background-image: url("../img/sprite.png")
+				height: 13px
+				width: 15px
+				background-position: 300px 400px
+				display: inline-block
+				margin: 0 12px 12px 10px
+
+	.links_top
+		ul
+			padding-left: 0
+			margin-top: 15px
+			list-style: none
+			li 
+				margin-right: 11px
+				display: inline-block
+				text-decoration: none
+				a 
+					color: #105a8f
+					text-decoration: underline
+					line-height: 15px
+					font-size: 13px
+					font-weight: normal
+					&:hover
+						color: #6611cc
+
+					.quest
+						background-image: url("../img/sprite.png")
+						height: 15px
+						width: 15px
+						background-position: 300px 438px
+						display: inline-block
+						margin-right: 2px
+						
+	.wrap_mnu
+		ul
+			padding-left: 0
+			margin-top: 18px
+			background: #1369a0 /* Old browsers */
+			background: -moz-linear-gradient(top,  #1369a0 0%, #0a588a 50%, #054b7a 77%, #13689e 100%) /* FF3.6-15 */
+			background: -webkit-linear-gradient(top,  #1369a0 0%,#0a588a 50%,#054b7a 77%,#13689e 100%) /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom,  #1369a0 0%,#0a588a 50%,#054b7a 77%,#13689e 100%)/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1369a0', endColorstr='#13689e',GradientType=0 ) /* IE6-9 */
+			border-radius: 6px
+			border: 1px solid #246188
+			-webkit-box-shadow: inset 0px 0px 0px 1px rgba(94,155,194,1)
+			-moz-box-shadow: inset 0px 0px 0px 1px rgba(94,155,194,1)
+			box-shadow: inset 0px 0px 0px 1px rgba(94,155,194,1)
+
+			li 
+				display: inline-block
+				text-decoration: none
+				max-width: 200px
+				border-right: 1px solid #246188
+				border-left: 1px solid #5e9bc2
+				position: relative
+				padding: 0
+				margin-left: -4px
+				transition: 0.5s all
+				&:hover
+					background-color: rgba(255,255,255,.5)
+					
+				a 
+					width: 100%
+					color: #fff
+					font-family: Arial, sans-serif
+					font-size: 15px
+					font-weight: bold
+					text-decoration: none
+					padding: 10px 58px 10px 24px
+					display: inline-block
+
+					p 	
+						margin: 0
+						padding: 0
+						line-height: 16px
+					.mnu_triangle
+						background-image: url("../img/sprite.png")
+						height: 13px
+						width: 15px
+						background-position: 300px 400px
+						display: inline-block
+						position: absolute
+						top: 20px
+						right: 10px
+			li:last-child
+				border-right: none
+			li:first-child
+				border-left: none
+				margin-left: 0
+
+
+	.wrap_mnu
+
+		li.mnu__list
+			position: relative
+			z-index: 100
+			&:hover .mnu_drop
+				opacity: 1
+				top: 30px
+
+			.mnu_drop
+				position: absolute
+				width: 100%
+				top: -9999em
+				opacity: 0
+				transition: 0.5s opacity
+				border-top: 10px solid transparent
+				
+				li
+					border-left: none
+					border-right: none
+					margin: 0
+					padding: 0
+					width: 100%
+					background-color: #246188
+					a 
+						padding: 7px 58px 7px 24px
+						transition: 0.5s all
+						&:hover
+							background-color: rgba(255,255,255,.2)
+							padding: 12px 0 12px 35px
+				li:first-child
+					border-radius: 6px 6px 0 0 
+				li:last-child
+					border-radius: 0 0 6px 6px
+
+	.wrap_mnu
+		li 
+			ul.mnu_drop
+				background: none
+				border-style: none	
+				box-shadow: none
+			
+/*gallery*/
+
+.gallery
+	position: relative
+	margin-top: 3px
+
+.gallery_container
+	
+	background: #fff
+	max-width: 777px
+	margin: 0 auto
+	border: 6px solid #689cbe
+	border-radius: 4px
+	float: left
+
+
+.rslides 
+	position: relative
+	list-style: none
+	overflow: hidden
+	width: 100%
+	padding: 0
+	margin: 0
+
+.rslides_tabs 
+	li 
+		display: inline
+		float: none
+		margin-right: 1px
+
+
+.rslides 
+	li 
+		-webkit-backface-visibility: hidden
+		position: absolute
+		display: none
+		width: 100%
+		left: 0
+		top: 0
+
+
+.rslides 
+	li
+		position: relative
+		display: block
+		float: left
+
+.rslides 
+	img 
+		display: block
+		height: auto
+		float: left
+		width: 100%
+		border: 0
+
+
+.rslides_tabs 
+	position: absolute
+	z-index: 100
+	bottom: -37px
+	left: -21px
+	text-align: center
+
+	li
+		display: inline-block
+		margin-left: 2px
+		background-color: #689cbe
+		border-radius: 0 0 3px 3px
+		border: 2px solid #689cbe
+		border-top: none
+		width: 20px
+		height: 26px
+		&:hover
+			background-color: #fff
+		a
+			padding-top: 5px
+			margin-bottom: 5px
+			display: block
+			overflow: hidden
+			color: #fff
+			font-weight: bold
+			font-size: 13px
+			text-decoration: none
+			width: 100%
+			&:hover
+				color: #d10000
+
+.slide-text
+	position: absolute
+	width: 55%
+	top: 0
+	left: 4%
+	h2
+		margin-top: 10px
+		font-family: "CenturyGothic", sans-serif
+		color: #6640c7
+		font-size: 30.61px
+		letter-spacing: -2px
+	.slide-text-p
+		width: 68%
+		p
+			font-family: "CenturyGothic", sans-serif
+			color: #333333
+			font-size: 17px
+			letter-spacing: -1px
+	.btn_gall
+		width: 65%
+		position: relative
+		span
+			position: absolute
+			top: 8px
+			left: 20px
+			font-family: "CenturyGothic-Bold", sans-serif
+			font-size: 18px
+			color: #fff
+			letter-spacing: -1px
+		&:active
+			-webkit-transform: translateY(2px)
+			-ms-transform: translateY(2px)
+			transform: translateY(2px)
+	
+// gallery-end
+
+.share
+	h3
+		font-family: "Arial-Black", sans-serif
+		font-weight: normal
+		font-style: italic
+		color: #d10000
+		font-size: 25px
+		margin-top: 0
+		padding-left: 0
+	.share_wrap
+		margin-top: 5px
+		margin-bottom: 20px
+		.share_img
+			background-image: url("../img/images.png")
+			height: 50px
+			width: 42px
+			background-position: 193px -9px
+		.good2
+			background-image: url("../img/images.png")
+			height: 50px
+			width: 50px
+			background-position: 138px -9px
+		.good3
+			background-image: url("../img/images.png")
+			height: 50px
+			width: 50px
+			background-position: 70px -9px
+		.all_shares
+			background-image: url("../img/sprite.png")
+			position: relative
+			height: 30px
+			width: 130px
+			background-position: 300px -185px
+			span 
+				position: absolute
+				font-size: 15px
+				font-weight: bold
+				text-decoration: underline
+				color: #105a8f
+				top: 2px
+				left: 12px
+			
+		.share_descr
+			margin-left: 10px
+			p
+			font-size: 13px
+			text-align: left
+			color: #333333
+			a 
+				text-decoration: underline
+				color: #105a8f
+				&:hover
+					color: #6640c7
+
+// tabs-section
+
+
+	
+
+
+.tabs-wr
+	.wrapper
+		.tabs
+			.tab 
+				display: inline-block
+				margin-bottom: -1px
+				border: none
+				background: none
+				font-style: italic
+				color: #105a8f
+				font-family: "Arial-Black", sans-serif
+				font-size: 18px
+				text-decoration: dashed
+				padding: 0px 0px
+				margin-right: 15px
+				cursor: pointer
+				position: relative
+				z-index: 50
+				text-decoration: none
+				border-bottom: 1px dashed
+				&.active 
+					font-family: "Arial-Black", sans-serif
+					font-weight: normal
+					color: #d10000
+					font-size: 20px
+					text-decoration: none
+					padding: 16px 34px
+					border: 1px solid #689cbe
+					border-radius: 6px 6px 0 0
+					background: #ffffff /* Old browsers */
+					background: -moz-linear-gradient(top,  #ffffff 0%, #ebebeb 50%, #ffffff 100%) /* FF3.6-15 */
+					background: -webkit-linear-gradient(top,  #ffffff 0%,#ebebeb 50%,#ffffff 100%) /* Chrome10-25,Safari5.1-6 */
+					background: linear-gradient(to bottom,  #ffffff 0%,#ebebeb 50%,#ffffff 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ) /* IE6-9 */
+					border-bottom: 1px solid #fff
+					text-decoration: none
+		.tab_content
+			.tab_item
+				border: 1px solid #689cbe
+				border-radius: 0 6px 6px 6px
+				.all_prod_btn
+					a 
+						text-decoration: none
+					.all_products_btn
+						float: right
+						margin-top: 5px
+						margin-right: 72px
+						background-image: url("../img/sprite.png")
+						position: relative
+						width: 238px
+						height: 30px
+						background-position: 300px -442px
+						z-index: 200
+						span 
+							text-decoration: underline
+							position: relative
+							font-size: 15px
+							font-weight: bold
+							color: #105a8f
+							top: 2px
+							left: 12px
+				
+
+
+
+				
+						
+
+// tabs-content
+
+.bxslider
+	li
+		.product_wrap
+			margin-top: 43px
+			// margin-left: 20px
+			display: inline-block
+			.product_img
+				background-image: url("../img/images.png")
+				height: 148px
+				width: 200px
+				background-position: 202px -82px
+			.prod2
+				background-image: url("../img/images.png")
+				height: 148px
+				width: 200px
+				background-position: 199px -251px
+			.prod3
+				background-image: url("../img/images.png")
+				height: 148px
+				width: 200px
+				background-position: 202px -393px
+			.prod4
+				background-image: url("../img/images.png")
+				height: 148px
+				width: 200px
+				background-position: 202px -553px
+			.prod5
+				background-image: url("../img/images.png")
+				height: 148px
+				width: 200px
+				background-position: 202px -819px
+			.product_descr
+				width: 100%
+				p 
+					color: #d10000
+					font-size: 13px
+					text-align: left
+					margin-bottom: 0
+					a 
+						text-decoration: underline
+						color: #105a8f
+						font-size: 13px
+						&:hover
+							color: #6640c7
+				p.dollar_price
+					font-size: 11px
+					color: #5c9559
+				p.prev_price
+					margin: 0
+					padding: 0
+					font-size: 15px
+					font-weight: bold
+					color: #999999
+					text-decoration: line-through #d10000
+					span 
+						font-size: 13px
+				p.big_margin
+					margin-top: 20px
+				a.btn_price
+					text-decoration: none
+					.current_prise
+						position: relative
+						background-image: url("../img/sprite.png")
+						background-repeat: no-repeat
+						background-position: center center/100% 100%
+						height: 30px
+						width: 122px
+						background-position: 0px -236px
+						span 
+							position: absolute
+							top: 0
+							left: 7px
+							font-size: 18px
+							color: #333333
+							font-family: "Arial-Black", sans-serif
+							font-weight: normal
+							font-style: italic
+							strong.grn 
+								color: #333333
+								font-family: Arial, sans-serif
+								font-weight: bold
+								font-style: normal
+								font-size: 13px
+						.small_scart
+							position: absolute
+							top: 0
+							right: 8px
+							background-image: url("../img/sprite.png")
+							height: 23px
+							width: 21px
+							background-position: -2px -282px
+					.long-price
+						position: relative
+						background-image: url("../img/sprite.png")
+						background-repeat: no-repeat
+						background-position: center center/100% 100%
+						height: 30px
+						width: 151px
+						background-position: -142px -235px
+						.small_scart
+							position: absolute
+							top: 0
+							right: 13px
+						span 
+							position: absolute
+							top: 0
+							left: 12px
+					.first_btn
+						margin-top: 20px
+			 
+// tabs-content-end
+// tabs-section-end
+
+
+// section-brands
+
+
+.brands
+	.main_p
+		float: left
+		margin-top: 35px
+		p
+			font-size: 15px
+			font-weight: bold
+			color: #333333
+			text-align: left
+			font-style: italic
+	.all_brand_btn
+		float: right
+		a 
+			text-decoration: none
+			.all_brands_btn
+				margin-top: 25px
+				margin-right: 72px
+				background-image: url("../img/sprite.png")
+				position: relative
+				width: 204px
+				height: 30px
+				background-position: 300px -327px
+				z-index: 200
+				span 
+					text-decoration: underline
+					position: relative
+					font-size: 15px
+					font-weight: bold
+					color: #105a8f
+					top: 2px
+					left: 12px	
+
+.brands
+	.brands_wrap
+		display: inline-block
+		.brand_top
+			margin: 0
+			padding: 0
+			border-bottom: 1px solid #dddcdc
+			.bord_none
+				border-right: none
+			.brand_tl,
+			.brand_tr
+				display: inline-block
+				margin: 0 0 -6px 0
+				padding: 0
+				border-image: url(../img/bord-top.png) 2 stretch
+	
+		.brand_bottom	
+			margin: 0
+			padding: 0
+			.brand_bl,
+			.brand_br
+				display: inline-block
+				margin: 0
+				padding: 0
+				border-image: url(../img/bord-bottom.png) 2 stretch
+			.bord_none
+				border-right: none
+
+.brands
+	.brands_wrap
+		margin: 0 0 0 -4px
+		padding: 0
+		.brand_general
+			width: 141px
+			height: 63px
+			border-right: 1px solid	
+.brands
+	.brands_wrap
+		.brand_img
+			margin: auto auto
+
+.brands
+	.brands_wrap
+		.brand_tl	
+			.brand1
+				width: 74px
+				height: 41px
+				margin-top: 11px
+				background-image: url("../img/brands.png")
+				background-position: 0px 0px
+			.brand5
+				width: 37px
+				height: 46px
+				margin-top: 11px
+				background-image: url("../img/brands.png")
+				background-position: 0px -269px
+			.brand9
+				width: 55px
+				height: 38px
+				margin-top: 11px
+				background-image: url("../img/brands.png")
+				background-position: 54px -2px
+			.brand13
+				width: 74px
+				height: 18px
+				margin-top: 21px
+				background-image: url("../img/brands.png")
+				background-position: 74px -258px
+		.brand_tr	
+			.brand2
+				width: 94px
+				height: 20px
+				margin-top: 20px
+				background-image: url("../img/brands.png")
+				background-position: 0px -69px
+			.brand6
+				width: 96px
+				height: 22px
+				margin-top: 20px
+				background-image: url("../img/brands.png")
+				background-position: 0px -346px
+			.brand10
+				width: 106px
+				height: 23px
+				margin-top: 20px
+				background-image: url("../img/brands.png")
+				background-position: 107px -72px
+			.brand14
+				width: 82px
+				height: 30px
+				margin-top: 20px
+				background-image: url("../img/brands.png")
+				background-position: 82px -344px
+		.brand_bl	
+			.brand3
+				width: 74px
+				height: 41px
+				margin-top: 11px
+				background-image: url("../img/brands.png")
+				background-position: 0px -121px
+			.brand7
+				width: 55px
+				height: 38px
+				margin-top: 14px
+				background-image: url("../img/brands.png")
+				background-position: 0px -394px
+			.brand11
+				width: 103px
+				height: 29px
+				margin-top: 14px
+				background-image: url("../img/brands.png")
+				background-position: 107px -121px
+			.brand15
+				width: 57px
+				height: 17px
+				margin-top: 28px
+				background-image: url("../img/brands.png")
+				background-position: 57px -396px
+		.brand_br	
+			.brand4
+				width: 59px
+				height: 25px
+				margin-top: 20px
+				background-image: url("../img/brands.png")
+				background-position: 0px -196px
+			.brand8
+				width: 80px
+				height: 25px
+				margin-top: 20px
+				background-image: url("../img/brands.png")
+				background-position: 0px -469px
+			.brand12
+				width: 82px
+				height: 21px
+				margin-top: 25px
+				background-image: url("../img/brands.png")
+				background-position: 81px -198px
+			.brand16
+				width: 114px
+				height: 31px
+				margin-top: 25px
+				background-image: url("../img/brands.png")
+				background-position: 114px -471px
+	
+
+	.brands_list
+		height: 139px
+		margin-top: 45px
+		
+		ul 
+			list-style: none
+			padding: 0
+			margin: 0
+			display: inline-block
+			li 
+				width: 139px
+				a 
+					font-size: 11px
+					color: #105a8f
+					text-align: left
+					text-decoration: underline
+					&:hover
+						color: #d10000
+	.brands-border
+		margin-top: 40px
+		border-bottom: 1px solid #e6e6e6
+	// section-brands-end
+
+	// section-articles
+
+.articles
+	.main_h
+		float: left
+		margin-top: 18px
+		
+		h2
+			font-family: "Arial-Black", sans-serif
+			font-size: 20px
+			color: #333333
+			text-align: left
+			font-style: italic
+	.all_article_btn
+		float: right
+		margin-top: 40px
+		margin-right: 35px
+		a 
+			text-decoration: none
+			.all_articles_btn
+				background-image: url("../img/sprite.png")
+				width: 240px
+				height: 30px
+				background-position: 300px -442px
+				span 
+					text-decoration: underline
+					position: relative
+					font-size: 15px
+					font-weight: bold
+					color: #105a8f
+					top: 2px
+					left: 12px
+
+.articles
+	.bord_bott_articles
+		border-bottom: 4px solid #105a8f
+		margin-top: 35px
+		img 
+			width: 100%
+			margin: 0 auto
+
+	.articles_img
+		background-image: url("../img/images.png")
+		width: 156px
+		height: 122px
+		background-position: -26px -994px
+		margin-top: 10px
+	.art2
+		background-image: url("../img/images.png")
+		width: 156px
+		height: 122px
+		background-position: -21px -1113px
+		margin-top: 10px
+	.art3
+		background-image: url("../img/images.png")
+		width: 156px
+		height: 122px
+		background-position: -21px -1276px
+		margin-top: 10px
+	.art4
+		background-image: url("../img/images.png")
+		width: 156px
+		height: 122px
+		background-position: -21px -1443px
+		margin-top: 10px
+	.articles_descr
+		h4
+			margin-top: 25px
+			font-size: 15px
+			color: #105a8f
+			text-align: left
+			line-height: 20px
+			a 
+				text-decoration: underline
+				&:hover
+					color: #6611cc
+		p 
+			font-size: 13px
+			color: #333333
+			text-align: left
+
+// section-articles-end
+
+// section-footer
+
+footer
+
+	p 
+		font-size: 15px
+		margin-top: 20px
+		margin-bottom: 0
+		color: #333333
+	.links_bottom
+		ul
+			padding-left: 0
+			margin-top: 0px
+			list-style: none
+			li 
+				margin-right: 11px
+				display: inline-block
+				text-decoration: none
+				a 
+					color: #105a8f
+					text-decoration: underline
+					line-height: 15px
+					font-size: 13px
+					font-weight: normal
+					&:hover
+						color: #6611cc
+
+					.quest
+						background-image: url("../img/sprite.png")
+						height: 15px
+						width: 15px
+						background-position: 300px 438px
+						display: inline-block
+						margin-right: 2px
+footer
+	.contact_bottom
+		p 
+			font-size: 13px
+			margin-bottom: 0
+		p.phone_b
+			font-size: 24px
+			margin-top: 0
+			span
+				font-weight: bold
+		a.fc 
+			font-size: 13px
+			color: #105a8f
+			text-decoration: underline dashed
+	.feedback_btn_wrap
+		margin-top: 20px
+		margin-left: -10px
+		a 
+			text-decoration: none
+
+			.feedback_btn
+				background-image: url("../img/sprite.png")
+				width: 173px
+				height: 30px
+				background-position: 210px -280px
+				span 
+					text-decoration: none
+					border-bottom: 1px dashed
+					position: relative
+					font-size: 13px
+					color: #105a8f
+					top: 4px
+					left: 14px
+		
+
+
+footer 
+	.works_time
+		margin-top: 20px
+		p
+			font-size: 13px
+			margin-bottom: 10px
+			margin-top: 0
+			span
+				font-weight: bold
+		p.pay
+			margin-top: 25px
+	.visa
+		background-image: url("../img/sprite.png")
+		width: 65px
+		height: 26px
+		background-position: -235px -58px
+		display: inline-block
+	.master
+		background-image: url("../img/sprite.png")
+		width: 43px
+		height: 29px
+		background-position: -258px -112px
+		display: inline-block
+	.wm
+		background-image: url("../img/sprite.png")
+		width: 100px
+		height: 35px
+		background-position: -200px -155px
+		display: inline-block
+
+footer
+	.social
+		margin-top: 20px
+		.soc_wrap
+			position: relative
+			.soc_descr
+				padding-top: 10px
+				margin-left: 40px
+				a
+					font-size: 13px
+					color: #105a8f
+					text-decoration: underline
+					&:hover
+						color: #6611cc
+			.social_img1
+				background-image: url("../img/sprite.png")
+				width: 39px
+				height: 34px
+				background-position: -43px -50px
+				position: absolute
+			.social_img2
+				background-image: url("../img/sprite.png")
+				width: 39px
+				height: 34px
+				background-position: -89px -50px
+				position: absolute
+			.social_img3
+				background-image: url("../img/sprite.png")
+				width: 39px
+				height: 34px
+				background-position: -136px -50px
+				position: absolute
+				
+footer
+	position: relative
+	.owox
+		margin-top: 20px
+		.owox-wrap
+			background-image: url("../img/sprite.png")
+			width: 120px
+			height: 26px
+			background-position: 120px -4px
+		p 
+			font-size: 11px
+			color: #4e4e4e
+			line-height: 15px
+			a 
+				color: #105a8f
+				text-decoration: underline
+				&:hover
+					color: #6611cc
+		span
+			color: #999999
+		.vertical_line
+			background-image: url("../img/vertical-bottom.png")
+			width: 3px
+			height: 168px
+			background-position: 0px 0px
+			position: absolute
+			top: -25px
+			left: -30px
+
+footer
+	a 
+		font-size: 13px
+		color: #333333
+		text-decoration: underline
+	.rule
+		float: left
+		margin-bottom: 30px
+	.developer
+		float: right
+		margin-bottom: 50px
